@@ -15,7 +15,12 @@ export const SliderData = [
     image: "../../images/Animals Hercules.JPG",
   },
   {
-    image:
-      "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2014_12/271761/140321-caraoke-mms-1844.jpg",
+    image: "../../images/Animals Jasper.JPG",
+  },
+  {
+    image: "../../images/Animals Lacey.JPG",
+  },
+  {
+    image: "../../images/Animals Lazy Daisy.JPG",
   },
 ];
