@@ -1,7 +1,6 @@
-//Focus on one image by itself
 import React from "react";
 
-class Image extends React.Component {
+class ImageCard extends React.Component {
   constructor(props) {
     super(props);
 
@@ -11,7 +10,6 @@ class Image extends React.Component {
   }
 
   componentDidMount() {
-    //Property to allow image to load first, before we try to get the height of the image. Whenever image is properly loaded, emits load event
     this.imageRef.current.addEventListener("load", this.setSpans);
   }
 
@@ -24,14 +22,13 @@ class Image extends React.Component {
   };
 
   render() {
-    const { description, urls } = this.props.image;
-
+    const { image } = this.props.image;
     return (
       <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
-        <img ref={this.imageRef} alt={description} src={urls.regular} />
+        <img ref={this.imageRef} src={image} alt="image" />
       </div>
     );
   }
 }
 
-export default Image;
+export default ImageCard;
