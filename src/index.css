@@ -1,7 +1,7 @@
 body {
-    background-color: grey;
+    background-image: linear-gradient(to right bottom, #080808, #222);
 }
 
-a.item {
-    color: white;
+p {
+    color: white !important;
 }

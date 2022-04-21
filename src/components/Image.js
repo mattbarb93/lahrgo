@@ -25,7 +25,12 @@ class ImageCard extends React.Component {
     const { image } = this.props.image;
     return (
       <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
-        <img ref={this.imageRef} src={image} alt="image" />
+        <img
+          className="fade-in-image"
+          ref={this.imageRef}
+          src={image}
+          alt="image"
+        />
       </div>
     );
   }
