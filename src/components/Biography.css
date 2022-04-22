@@ -1,25 +1,25 @@
-.content {
+.biography-content {
     position: relative;
     width: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 80vh;
 }
 
-.content h1 {
+.biography-content h1 {
     color: white;
     font-size: 3em;
     font-family: "Lato", sans-serif;
     font-weight: 900;
 }
 
-.content h3 {
+.biography-content h3 {
     color: white;
 }
 
-.content img {
+.biography-content img {
     width: 80%;
     height: 100%;
 }
@@ -27,8 +27,4 @@
 .biography-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-
-.home-buttons {
-    padding: 50px 50px;
 }
