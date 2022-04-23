@@ -21,8 +21,8 @@ const Header = () => {
         <Link to="/exhibitions" className="item">
           Exhibitions
         </Link>
-        <Link to="/pictures" className="item">
-          Other Pictures
+        <Link to="/paintings" className="item">
+          Other Paintings
         </Link>
       </div>
     </div>
