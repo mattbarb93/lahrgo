@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
 
 const Contact = (e) => {
 
-  function sendEmail(e) {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_tawmsjs', e.target, 'pox8a-PJjKSpbDgy6')
+    emailjs.sendForm('service_jdsqiyg', 'template_tawmsjs', form.current, 'pox8a-PJjKSpbDgy6')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -21,7 +22,7 @@ const Contact = (e) => {
     <h1>CONTACT</h1>
 
       <div>
-        <form onSubmit={sendEmail} className="ui inverted form">
+        <form ref={form} onSubmit={sendEmail} className="ui inverted form">
           <div className="field">
             <label>Name</label>
             <input type="text" name="name" placeholder="Name"/>
@@ -32,9 +33,9 @@ const Contact = (e) => {
           </div>
           <div className="field">
             <label>Message</label>
-            <textarea type="text" rows="4" placeholder="Message" />
+            <textarea name="message" type="text" rows="4" placeholder="Message" />
           </div>
-          <button className="ui orange inverted button" type="submit">Submit</button>
+          <button className="ui red button" type="submit">Submit</button>
         </form>
       </div>
     </div>
