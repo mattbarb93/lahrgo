@@ -1,0 +1,58 @@
+.section-header {
+    margin-top: 5vh;
+}
+
+
+.column {
+    height: 35vh;
+    margin-top: 2vh;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.column img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    filter: blur(1px);
+    position: absolute;
+    border-style: solid;
+    border-color: red;
+    margin: 1px;
+}
+
+.column p {
+    color: white;
+}
+
+.section-selector {
+    /* text-align: center !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: inherit;
+    text-align: center; */
+    display: flex !important;
+    justify-content: center;
+    margin: 20vh;
+}
+
+.section-selector img {
+    padding: inherit;
+    position: absolute;
+}
+
+
+.section-name {
+    width: inherit;
+    height: inherit;
+    font-size: 2em;
+    font-family: monospace;
+    color: white;
+    position: center;
+    margin:
+}
