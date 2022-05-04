@@ -9,50 +9,35 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
 
+
 .column img {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     object-fit: cover;
     opacity: 0.3;
     filter: blur(1px);
     position: absolute;
-    border-style: solid;
-    border-color: red;
+    border: 2px solid red;
     margin: 1px;
+    transition: all .3s ease-in-out;
+
 }
+
 
 .column p {
-    color: white;
-}
-
-.section-selector {
-    /* text-align: center !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: inherit;
-    text-align: center; */
-    display: flex !important;
-    justify-content: center;
-    margin: 20vh;
-}
-
-.section-selector img {
-    padding: inherit;
-    position: absolute;
-}
-
-
-.section-name {
-    width: inherit;
-    height: inherit;
-    font-size: 2em;
+    color: white !important;
     font-family: monospace;
-    color: white;
-    position: center;
-    margin:
+    font-size: 1.6rem;
+    z-index: 1;
+}
+
+
+.column img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    border-color: orange;
 }

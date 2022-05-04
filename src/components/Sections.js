@@ -13,27 +13,27 @@ const Sections = () => {
         <div className="three column row">
           <div className="column">
             <img src="/images/Bronx Zoo rhinoceros.jpg" />
-            <p>TBA: East Africa</p>
+            <p>TBD: East Africa</p>
           </div>
 
           <div className="column">
             <img src="/images/Animals Chardonnay.jpg" />
-            <p>TBA: East Africa</p>
+            <p>2017 Artists</p>
           </div>
 
           <div className="column">
             <img src="/images/Bronx Zoo Chuckwalla.jpg" />
-            <p>TBA: East Africa</p>
+            <p>2011 Bronx Zoo</p>
           </div>
         </div>
         <div className="three column row">
           <div className="column">
             <img src="/images/Bronx Zoo Lion.jpg" />
-            <p>TBA: East Africa</p>
+            <p>2007 Business Owners</p>
           </div>
           <div className="column">
             <img src="/images/Animals Luna with her arm up.jpg" />
-            <p>TBA: East Africa</p>
+            <p>2004 Portraits</p>
           </div>
         </div>
       </div>
