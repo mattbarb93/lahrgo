@@ -4,7 +4,7 @@ import ImageGrid from "./ImageGrid";
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import { useHistory } from "react-router-dom";
-import Sections from "./Sections";
+import Sections from "../exhibitions/Sections";
 
 const Home = () => {
   const history = useHistory();

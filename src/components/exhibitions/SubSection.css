@@ -1,0 +1,43 @@
+.section-header {
+    margin-top: 5vh;
+}
+
+
+.column {
+    height: 30vh;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.column-gallery img {
+    height: 70%;
+    width: 70%;
+    object-fit: cover;
+    opacity: 1;
+    filter: blur(0);
+    position: absolute;
+    border: 2px solid red;
+    margin: 1px;
+    transition: all .3s ease-in-out;
+
+}
+
+
+.column p {
+    color: white !important;
+    font-family: monospace;
+    font-size: 1.6rem;
+    z-index: 1;
+}
+
+
+.column img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    border-color: orange;
+}
