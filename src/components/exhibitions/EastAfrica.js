@@ -7,73 +7,118 @@ const EastAfrica = () => {
       <h1>EAST AFRICA</h1>
       <div class="ui grid">
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Rwandan Vegetables.jpg"
-          />
-          <p>Rwandan Vegetables</p>
-          <p>Gouache</p>
+          <a
+            href="http://localhost:3000/images/East Africa Elephant Youth.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Rwandan Vegetables.jpg"
+            />
+            <h3>Rwandan Vegetables</h3>
+            <h5>Gouache</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Four Water Buffaloes.jpg"
-          />
-          <p>Water Buffalos</p>
-          <p>Oil</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Four Water Buffaloes.jpg"
+            />
+            <h3>Water Buffalos</h3>
+            <h5>Oil</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Elephant Youth.jpg"
-          />
-          <p>Elephant Youth</p>
-          <p>Oil</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Elephant Youth.jpg"
+            />
+            <h3>Elephant Youth</h3>
+            <h5>Oil</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Here Come the Elephants.jpg"
-          />
-          <p>Here Come The Elephants</p>
-          <p>Oil</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Here Come the Elephants.jpg"
+            />
+            <h3>Here Come The Elephants</h3>
+            <h5>Oil</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Elephants Trooping by the Baobab Tree.jpg"
-          />
-          <p>Elephants Trooping by the Baobab Treet</p>
-          <p>Gouache</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Elephants Trooping by the Baobab Tree.jpg"
+            />
+            <h3>Elephants Trooping by the Baobab Treet</h3>
+            <h5>Gouache</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img className="ui image" src="../images/East Africa Warthog.jpg" />
-          <p>Warthog</p>
-          <p>Pastel</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img className="ui image" src="../images/East Africa Warthog.jpg" />
+            <h3>Warthog</h3>
+            <h5>Pastel</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Mama Gorilla.jpg"
-          />
-          <p>Mama Gorilla</p>
-          <p>Oil</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Mama Gorilla.jpg"
+            />
+            <h3>Mama Gorilla</h3>
+            <h5>Oil</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Silverback.jpg"
-          />
-          <p>Silverback</p>
-          <p>Oil</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Silverback.jpg"
+            />
+            <h3>Silverback</h3>
+            <h5>Oil</h5>
+          </a>
         </div>
         <div className="four wide column column-gallery">
-          <img
-            className="ui image"
-            src="../images/East Africa Sleepy Baby Gorilla.jpg"
-          />
-          <p>Sleepy Baby Gorilla</p>
-          <p>Gouache</p>
+          <a
+            href="http://localhost:3000/images/East Africa Four Water Buffaloes.jpg"
+            className="four wide column column-gallery"
+          >
+            <img
+              className="ui image"
+              src="../images/East Africa Sleepy Baby Gorilla.jpg"
+            />
+            <h3>Sleepy Baby Gorilla</h3>
+            <h5>Gouache</h5>
+          </a>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import Sections from "./components/exhibitions/Sections";
 import Home from "./components/home/Home";
 import Header from "./components/Header";
 import EastAfrica from "./components/exhibitions/EastAfrica";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/exhibitions" exact component={Sections} />
           <Route path="/exhibitions/EastAfrica" exact component={EastAfrica} />
           <Route path="/pictures" exact component={Sections} />
+          <Footer />
         </div>
       </BrowserRouter>
     </div>

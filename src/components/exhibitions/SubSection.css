@@ -41,3 +41,19 @@
     transform: scale(1.05);
     border-color: orange;
 }
+
+.column a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.column h3 {
+    color: white;
+    text-align: center;
+}
+
+.column h5 {
+    color: white;
+    margin: 0;
+}
