@@ -11,6 +11,7 @@ import {
   useParams,
 } from "react-router-dom";
 import EastAfrica from "./EastAfrica";
+import Artists2017 from "./Artists2017";
 
 const Sections = () => {
   const history = useHistory();
@@ -36,13 +37,6 @@ const Sections = () => {
               <p>TBD: East Africa</p>
             </div>
 
-            {/* <Link path={`${url}/EastAfrica`} className="column">
-              <div className="column">
-                <img src="/images/Bronx Zoo rhinoceros.jpg" />
-                <p>TBD: East Africa</p>
-              </div>
-            </Link> */}
-
             <div onClick={navigateTo2017Artists} className="column">
               <img src="/images/Animals Chardonnay.jpg" />
               <p>2017 Artists</p>
@@ -65,12 +59,6 @@ const Sections = () => {
             </div>
           </div>
         </div>
-
-        <Switch>
-          <Route exact path={`${url}/EastAfrica`}>
-            <EastAfrica />
-          </Route>
-        </Switch>
       </Router>
     </div>
   );

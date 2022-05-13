@@ -1,7 +1,21 @@
 .footer {
     position: fixed;
+
     bottom: 0;
     color: white;
     text-align: center;
-    height: 10vh;
+    min-height: 10vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-right: 0 !important;
+}
+
+.ui.fluid.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
 }
