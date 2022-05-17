@@ -1,11 +1,21 @@
 import React from "react";
-import "./SubSection.css";
+import "./Gallery.css";
+import Gallery from "./Gallery";
+import { EastAfricaData } from "./data/EastAfricaData";
 
 const EastAfrica = () => {
   return (
-    <div>
+    <div className="scroll">
       <h1>EAST AFRICA</h1>
-      <div class="ui grid">
+      <Gallery paintings={EastAfricaData} />
+    </div>
+  );
+};
+
+export default EastAfrica;
+
+{
+  /* <div class="ui grid">
         <div className="four wide column column-gallery">
           <a
             href="http://localhost:3000/images/East Africa Elephant Youth.jpg"
@@ -120,9 +130,5 @@ const EastAfrica = () => {
             <h5>Gouache</h5>
           </a>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default EastAfrica;
+      </div> */
+}

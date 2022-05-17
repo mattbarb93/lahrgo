@@ -1,6 +1,6 @@
 import React from "react";
 import { BronxZoo2011Data } from "./data/BronxZoo2011Data";
-import "./SubSection.css";
+import "./Gallery.css";
 import Gallery from "./Gallery";
 
 const BronxZoo2011 = () => {
