@@ -14,39 +14,46 @@ import Portraits2004 from "./components/exhibitions/Portraits2004";
 
 const App = () => {
   return (
-    <div className="ui container">
-      <BrowserRouter>
-        <div>
-          <Header />
-          <Route path="/" exact component={Home} />
-          <Route path="/biography" exact component={Biography} />
-          <Route path="/contact" exact component={Contact} />
-          <Route path="/exhibitions" exact component={Sections} />
-          <Route path="/exhibitions/EastAfrica" exact component={EastAfrica} />
-          <Route
-            path="/exhibitions/2017Artists"
-            exact
-            component={Artists2017}
-          />
-          <Route
-            path="/exhibitions/2011BronxZoo"
-            exact
-            component={BronxZoo2011}
-          />
-          <Route
-            path="/exhibitions/2007BusinessOwners"
-            exact
-            component={BusinessOwners2007}
-          />
-          <Route
-            path="/exhibitions/2004Portraits"
-            exact
-            component={Portraits2004}
-          />
-          <Route path="/pictures" exact component={Sections} />
-          {/* <Footer /> */}
-        </div>
-      </BrowserRouter>
+    <div>
+      <div className="ui container">
+        <BrowserRouter>
+          <div>
+            <Header />
+            <Route path="/" exact component={Home} />
+            <Route path="/biography" exact component={Biography} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/exhibitions" exact component={Sections} />
+            <Route
+              path="/exhibitions/EastAfrica"
+              exact
+              component={EastAfrica}
+            />
+            <Route
+              path="/exhibitions/2017Artists"
+              exact
+              component={Artists2017}
+            />
+            <Route
+              path="/exhibitions/2011BronxZoo"
+              exact
+              component={BronxZoo2011}
+            />
+            <Route
+              path="/exhibitions/2007BusinessOwners"
+              exact
+              component={BusinessOwners2007}
+            />
+            <Route
+              path="/exhibitions/2004Portraits"
+              exact
+              component={Portraits2004}
+            />
+            <Route path="/pictures" exact component={Sections} />
+            {/* <Footer /> */}
+          </div>
+        </BrowserRouter>
+      </div>
+      <Footer />
     </div>
   );
 };
