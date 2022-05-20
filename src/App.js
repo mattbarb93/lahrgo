@@ -11,6 +11,12 @@ import Artists2017 from "./components/exhibitions/Artists2017";
 import BronxZoo2011 from "./components/exhibitions/BronxZoo2011";
 import BusinessOwners2007 from "./components/exhibitions/BusinessOwners2007";
 import Portraits2004 from "./components/exhibitions/Portraits2004";
+import PaintingsSection from "./components/paintings/paintingsSection";
+import Animals from "./components/paintings/Animals";
+import Portraits from "./components/paintings/Portraits";
+import Landscapes from "./components/paintings/Landscapes";
+import Readers from "./components/paintings/Readers";
+import StillLifes from "./components/paintings/StillLifes";
 
 const App = () => {
   return (
@@ -23,6 +29,7 @@ const App = () => {
             <Route path="/biography" exact component={Biography} />
             <Route path="/contact" exact component={Contact} />
             <Route path="/exhibitions" exact component={Sections} />
+            <Route path="/paintings" exact component={PaintingsSection} />
             <Route
               path="/exhibitions/EastAfrica"
               exact
@@ -49,7 +56,11 @@ const App = () => {
               component={Portraits2004}
             />
             <Route path="/pictures" exact component={Sections} />
-            {/* <Footer /> */}
+            <Route path="/paintings/portraits" exact component={Portraits} />
+            <Route path="/paintings/Animals" exact component={Animals} />
+            <Route path="/paintings/Landscapes" exact component={Landscapes} />
+            <Route path="/paintings/Readers" exact component={Readers} />
+            <Route path="/paintings/StillLifes" exact component={StillLifes} />
           </div>
         </BrowserRouter>
       </div>

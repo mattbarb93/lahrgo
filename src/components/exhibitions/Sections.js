@@ -5,13 +5,7 @@ import {
   useHistory,
   useRouteMatch,
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
 } from "react-router-dom";
-import EastAfrica from "./EastAfrica";
-import Artists2017 from "./Artists2017";
 
 const Sections = () => {
   const history = useHistory();
@@ -33,12 +27,12 @@ const Sections = () => {
         <div className="ui two column centered grid">
           <div className="three column row">
             <div onClick={navigateToEastAfrica} className="column">
-              <img src="/images/Bronx Zoo rhinoceros.jpg" />
+              <img src="/images/East Africa Elephant Youth.jpg" />
               <p>TBD: East Africa</p>
             </div>
 
             <div onClick={navigateTo2017Artists} className="column">
-              <img src="/images/Animals Chardonnay.jpg" />
+              <img src="/images/Artists Alli Abbot vocalist.jpg" />
               <p>2017 Artists</p>
             </div>
 
@@ -49,12 +43,12 @@ const Sections = () => {
           </div>
           <div className="three column row">
             <div onClick={navigateTo2007BusinessOwners} className="column">
-              <img src="/images/Bronx Zoo Lion.jpg" />
+              <img src="/images/Hunt Bus Kura Barn, Hitoshi.JPG" />
               <p>2007 Business Owners</p>
             </div>
 
             <div onClick={navigateTo2004Portraits} className="column">
-              <img src="/images/Animals Luna with her arm up.jpg" />
+              <img src="/images/Lahrgo Portraits Caroline reading Cezanne.JPG" />
               <p>2004 Portraits</p>
             </div>
           </div>
