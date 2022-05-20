@@ -8,7 +8,7 @@ import Sections from "../exhibitions/Sections";
 
 const Home = () => {
   const history = useHistory();
-  const navigateToPaintings = () => history.push("/pictures");
+  const navigateToPaintings = () => history.push("/paintings");
   const navigateToExhibitions = () => history.push("/exhibitions");
   return (
     <div className="ui container">
