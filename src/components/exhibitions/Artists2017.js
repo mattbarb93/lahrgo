@@ -7,6 +7,7 @@ const Artists2017 = () => {
   return (
     <div className="scroll">
       <h1>2017 Artists</h1>
+      <p>Click on the image to enlarge it</p>
       <Gallery paintings={Artists2017Data} />
     </div>
   );

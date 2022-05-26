@@ -7,6 +7,7 @@ const Portraits2004 = () => {
   return (
     <div className="scroll">
       <h1>Portraits by Lahrgo - July 2004</h1>
+      <p>Click on the image to enlarge it</p>
       <Gallery paintings={Portraits2004Data} />
     </div>
   );

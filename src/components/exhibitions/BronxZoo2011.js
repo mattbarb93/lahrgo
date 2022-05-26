@@ -7,6 +7,7 @@ const BronxZoo2011 = () => {
   return (
     <div className="scroll">
       <h1>A Visit to the Bronx Zoo - October 2011</h1>
+      <p>Click on the image to enlarge it</p>
       <Gallery paintings={BronxZoo2011Data} />
     </div>
   );

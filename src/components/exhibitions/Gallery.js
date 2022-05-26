@@ -2,9 +2,8 @@ import React from "react";
 
 const Gallery = (props) => {
   const paintings = props.paintings.map((painting, index) => {
-    console.log(painting.image);
     return (
-      <div className="four wide column">
+      <div className="four wide column" key={index}>
         <a href={painting.url} className="column column-gallery">
           <img className="ui image" src={painting.image} />
           <h3>{painting.name}</h3>

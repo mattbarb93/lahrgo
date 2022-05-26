@@ -7,6 +7,7 @@ const EastAfrica = () => {
   return (
     <div className="scroll">
       <h1>EAST AFRICA</h1>
+      <p>Click on the image to enlarge it</p>
       <Gallery paintings={EastAfricaData} />
     </div>
   );

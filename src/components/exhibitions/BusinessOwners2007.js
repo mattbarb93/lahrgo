@@ -9,6 +9,7 @@ const BusinessOwners2007 = () => {
       <h1>
         Portraits of Huntington Businesses: An Artists Tribute - March 2007
       </h1>
+      <p>Click on the image to enlarge it</p>
       <Gallery paintings={BusinessOwners2007Data} />
     </div>
   );
