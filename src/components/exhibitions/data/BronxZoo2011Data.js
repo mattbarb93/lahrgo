@@ -1,6 +1,6 @@
 export const BronxZoo2011Data = [
   {
-    image: "../../../../public/images/Bronx Zoo gorillas.JPG",
+    image: "../../images/Bronx Zoo gorillas.JPG",
     name: "Turtle",
     type: "Pastel",
     url: "http://localhost:3000/images/Bronx Zoo turtle.JPG",

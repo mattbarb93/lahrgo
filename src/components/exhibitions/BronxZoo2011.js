@@ -5,7 +5,7 @@ import Gallery from "./Gallery";
 
 const BronxZoo2011 = () => {
   return (
-    <div>
+    <div className="scroll">
       <h1>A Visit to the Bronx Zoo - October 2011</h1>
       <Gallery paintings={BronxZoo2011Data} />
     </div>

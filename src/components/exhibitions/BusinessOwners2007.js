@@ -5,7 +5,7 @@ import Gallery from "./Gallery";
 
 const BusinessOwners2007 = () => {
   return (
-    <div>
+    <div className="scroll">
       <h1>
         Portraits of Huntington Businesses: An Artists Tribute - March 2007
       </h1>
