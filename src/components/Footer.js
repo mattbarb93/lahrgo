@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="footer">
         <div className="social-media">
-          <a href="http://facebook.com" className="footer-button ">
+          <a href="https://www.facebook.com/Lisa-Ahronee-Golub-Paintings-670120049740253/" className="footer-button ">
             <i className="fab fa-facebook-f facebook"></i>
           </a>
           <a href="http://instagram.com" className="footer-button">
