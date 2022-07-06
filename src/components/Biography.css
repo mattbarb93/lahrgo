@@ -28,3 +28,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+@media only screen and (max-width: 990px) {
+    .biography-section {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
