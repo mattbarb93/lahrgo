@@ -32,6 +32,7 @@
     color: white !important;
     font-family: monospace;
     font-size: 1.6rem;
+    text-align: center;
     z-index: 1;
 }
 
