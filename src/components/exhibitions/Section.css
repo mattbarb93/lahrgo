@@ -45,3 +45,9 @@
 .gallery-item-margin {
     margin-top: 10vh;
 }
+
+@media only screen and (max-width: 990px) {
+    .section-header {
+        text-align: center;
+    }
+}
