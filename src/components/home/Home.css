@@ -24,11 +24,6 @@
     height: 100%;
 }
 
-.biography-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .home-buttons {
     padding: 50px 50px;
 }
