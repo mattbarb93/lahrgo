@@ -17,14 +17,16 @@ import Portraits from "./components/paintings/Portraits";
 import Landscapes from "./components/paintings/Landscapes";
 import Readers from "./components/paintings/Readers";
 import StillLifes from "./components/paintings/StillLifes";
+import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
   return (
     <div>
-      <div className="ui container">
-        <BrowserRouter>
+      <BrowserRouter>
+        <NavBar />
+        <div className="ui container">
           <div>
-            <Header />
+            {/* <Header /> */}
             <Route path="/" exact component={Home} />
             <Route path="/biography" exact component={Biography} />
             <Route path="/contact" exact component={Contact} />
@@ -62,9 +64,9 @@ const App = () => {
             <Route path="/paintings/Readers" exact component={Readers} />
             <Route path="/paintings/StillLifes" exact component={StillLifes} />
           </div>
-        </BrowserRouter>
-      </div>
-      <Footer />
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };

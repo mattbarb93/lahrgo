@@ -1,0 +1,23 @@
+.MobileNavigation {
+    display: none;
+}
+
+.Hamburger {
+    color: white;
+    font-size: 2em !important;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .MobileNavigation {
+        display: flex;
+        background-color: pink;
+    }
+
+    .Navigation {
+        display: none;
+    }
+
+
+
+}
