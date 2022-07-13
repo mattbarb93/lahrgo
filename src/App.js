@@ -24,7 +24,7 @@ const App = () => {
     <div>
       <BrowserRouter>
         <NavBar />
-        <div className="ui container">
+        <div className="ui container pusher bottom">
           <div>
             {/* <Header /> */}
             <Route path="/" exact component={Home} />

@@ -20,7 +20,7 @@ const NavLinks = () => {
     <div
       className={`${
         isMobile
-          ? "ui sidebar overlay vertical inverted menu"
+          ? "ui sidebar overlay vertical inverted menu animating"
           : "ui secondary pointing menu"
       }`}
     >

@@ -24,7 +24,10 @@ const MobileNavigation = () => {
 
   return (
     <div className={classes.MobileNavigation}>
-      <div className="ui top inverted attached menu">
+      <div
+        className="ui top inverted attached menu"
+        onClick={() => setOpen(!open)}
+      >
         <Link to="/" className="item">
           Largho
         </Link>
