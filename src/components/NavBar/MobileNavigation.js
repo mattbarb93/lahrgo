@@ -4,36 +4,35 @@ import classes from "./Navbar.module.css";
 import { Icon } from "semantic-ui-react";
 import { useState } from "react";
 
-const MobileNavigation = () => {
-  const [open, setOpen] = useState(false);
+const MobileNavigation = ({ onToggleMenu, toggleMenu }) => {
+  //use the props to do the same thing
 
   const hamburgerIcon = (
     <Icon
       name="bars"
       className={classes.Hamburger}
-      onClick={() => setOpen(!open)}
+      onClick={() => onToggleMenu()}
     />
   );
   const closeIcon = (
     <Icon
       name="close"
       className={classes.Hamburger}
-      onClick={() => setOpen(!open)}
+      onClick={() => onToggleMenu()}
     />
   );
 
   return (
     <div className={classes.MobileNavigation}>
-      <div
-        className="ui top inverted attached menu"
-        onClick={() => setOpen(!open)}
-      >
+      <div className="ui top inverted attached menu">
         <Link to="/" className="item">
           Largho
         </Link>
 
-        {open && <NavLinks />}
-        <div className="right item">{open ? closeIcon : hamburgerIcon}</div>
+        {toggleMenu && <NavLinks toggleMenu={toggleMenu} />}
+        <div className="right item">
+          {toggleMenu ? closeIcon : hamburgerIcon}
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import Biography from "./components/Biography";
 import Contact from "./components/Contact";
@@ -18,14 +19,26 @@ import Landscapes from "./components/paintings/Landscapes";
 import Readers from "./components/paintings/Readers";
 import StillLifes from "./components/paintings/StillLifes";
 import NavBar from "./components/NavBar/NavBar";
+import cx from "classnames";
 
 const App = () => {
+  const [toggle, setToggle] = useState(false);
+
+  function toggleMenu() {
+    setToggle(!toggle);
+  }
+
+  const classes = cx("pusher", "bottom", { dimmed: toggle });
+
   return (
     <div>
       <BrowserRouter>
-        <NavBar />
-        <div className="ui container pusher bottom">
-          <div>
+        <NavBar toggleMenu={toggle} onToggleMenu={toggleMenu} />
+        <div
+          className="ui container attached pushable"
+          style={{ height: "100vh" }}
+        >
+          <div className={classes}>
             {/* <Header /> */}
             <Route path="/" exact component={Home} />
             <Route path="/biography" exact component={Biography} />

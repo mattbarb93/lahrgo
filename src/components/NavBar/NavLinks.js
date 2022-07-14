@@ -1,8 +1,22 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import cx from "classnames";
 import "./NavLinks.css";
 
-const NavLinks = () => {
+const NavLinks = (props) => {
+  const classes = cx(
+    "ui",
+    "sidebar",
+    "overlay",
+    "vertical",
+    "inverted",
+    "menu",
+    "animating",
+    { visible: props.toggleMenu },
+    { animation: "overlay" }
+    //ui sidebar overlay vertical inverted menu animating
+  );
+
   const [isMobile, setIsMobile] = useState(window.innerWidth < 990);
 
   useEffect(() => {
@@ -23,6 +37,7 @@ const NavLinks = () => {
           ? "ui sidebar overlay vertical inverted menu animating"
           : "ui secondary pointing menu"
       }`}
+      onClick={console.log("clicked!")}
     >
       <Link to="/" className="item">
         Home

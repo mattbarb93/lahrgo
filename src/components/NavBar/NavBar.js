@@ -1,11 +1,12 @@
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 
-const NavBar = () => {
+const NavBar = ({ onToggleMenu, toggleMenu }) => {
+  //Pass down the props down once more
   return (
     <div>
       <Navigation />
-      <MobileNavigation />
+      <MobileNavigation toggleMenu={toggleMenu} onToggleMenu={onToggleMenu} />
     </div>
   );
 };
