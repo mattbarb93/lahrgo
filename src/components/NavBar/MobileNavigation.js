@@ -7,14 +7,11 @@ import { useState } from "react";
 const MobileNavigation = ({ onToggleMenu, toggleMenu }) => {
   //use the props to do the same thing
 
+  //If the sidebar is open, closes after clicking in one of the icon options
+
   function closeSidebarWhenClickingIcon(toggleMenu) {
     if (toggleMenu === true) {
-      console.log(toggleMenu);
       onToggleMenu();
-      console.log("closed!");
-    } else {
-      console.log(toggleMenu);
-      console.log("its not open");
     }
   }
 
