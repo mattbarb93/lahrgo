@@ -28,6 +28,12 @@ const App = () => {
     setToggle(!toggle);
   }
 
+  function hideMenu(toggle) {
+    if (toggle) {
+      setToggle(false);
+    }
+  }
+
   const classes = cx("pusher", "bottom", { dimmed: toggle });
 
   return (
@@ -36,9 +42,9 @@ const App = () => {
         <NavBar toggleMenu={toggle} onToggleMenu={toggleMenu} />
         <div
           className="ui container attached pushable"
-          style={{ height: "100vh" }}
+          style={{ height: "80vh" }}
         >
-          <div className={classes}>
+          <div className={classes} onClick={hideMenu}>
             {/* <Header /> */}
             <Route path="/" exact component={Home} />
             <Route path="/biography" exact component={Biography} />

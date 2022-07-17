@@ -2,20 +2,21 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import cx from "classnames";
 import "./NavLinks.css";
+import { Sidebar } from "semantic-ui-react";
 
 const NavLinks = (props) => {
   const classes = cx(
     "ui",
+    { sidebar: props.toggleMenu },
     "sidebar",
     "overlay",
     "vertical",
-    "inverted",
     "menu",
-    "animating",
+    "transition",
     { visible: props.toggleMenu },
     { animation: "overlay" }
-    //ui sidebar overlay vertical inverted menu animating
   );
+  //ui sidebar overlay vertical inverted menu animating
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 990);
 
@@ -32,14 +33,14 @@ const NavLinks = (props) => {
 
   return (
     <div
+      //ui sidebar overlay menu  inverted vertical labeled icon ui  left thin
       className={`${
         isMobile
           ? "ui sidebar overlay vertical inverted menu animating"
           : "ui secondary pointing menu"
       }`}
-      onClick={console.log("clicked!")}
     >
-      <Link to="/" className="item">
+      <Link to="/" className="item" onClick={console.log("clicked home")}>
         Home
       </Link>
       <Link to="/biography" className="item">
