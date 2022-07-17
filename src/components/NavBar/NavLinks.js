@@ -40,7 +40,7 @@ const NavLinks = (props) => {
           : "ui secondary pointing menu"
       }`}
     >
-      <Link to="/" className="item" onClick={console.log("clicked home")}>
+      <Link to="/" className="item">
         Home
       </Link>
       <Link to="/biography" className="item">
