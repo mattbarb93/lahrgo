@@ -1,9 +1,27 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 const Gallery = (props) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 990);
+
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        const ismobile = window.innerWidth < 990;
+        if (ismobile !== isMobile) setIsMobile(ismobile);
+      },
+      false
+    );
+  }, [isMobile]);
+
   const paintings = props.paintings.map((painting, index) => {
     return (
-      <div className="four wide column" key={index}>
+      //
+      <div
+        className={`${isMobile ? "eight wide column" : "four wide column"}`}
+        key={index}
+      >
         <a href={painting.url} className="column column-gallery">
           <img className="ui image" src={painting.image} />
           <h3>{painting.name}</h3>
