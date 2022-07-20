@@ -63,3 +63,13 @@
     white-space: nowrap;
     max-height: 85vh;
 }
+
+@media (max-width: 990px) {
+    .column-gallery img {
+        height: 100%;
+        width: 80%;
+    }
+
+
+
+}
