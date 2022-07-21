@@ -22,7 +22,11 @@ const Gallery = (props) => {
         className={`${isMobile ? "eight wide column" : "four wide column"}`}
         key={index}
       >
-        <a href={painting.url} className="column column-gallery">
+        <a
+          href={painting.url}
+          target="_blank"
+          className="column column-gallery"
+        >
           <img className="ui image" src={painting.image} />
           <h3>{painting.name}</h3>
           <h5>{painting.type}</h5>
