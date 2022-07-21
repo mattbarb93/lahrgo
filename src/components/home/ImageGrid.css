@@ -37,11 +37,27 @@
 
     .image-grid img {
         width: 100%;
-        grid-row-end: span 2;
-        animation: fadeIn 5s;
-        -webkit-animation: fadeIn 5s;
-        -moz-animation: fadeIn 5s;
-        -o-animation: fadeIn 5s;
-        -ms-animation: fadeIn 5s;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 0.5fr));
+        grid-gap: 7px 25px;
+        grid-auto-rows: 3px;
+    }
+
+    .image-grid img {
+        width: 100%;
+    }
+
+    .background {
+        height: 80vh;
+        width: inherit;
+        opacity: 0.3;
+        filter: blur(2px);
+        z-index: -100;
+        position: absolute;
+        display: grid;
     }
 }

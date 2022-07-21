@@ -27,3 +27,18 @@
 .home-buttons {
     padding: 50px 50px;
 }
+
+
+@media (max-width: 420px) {
+    .content h1 {
+        text-align: center;
+    }
+
+    .home-buttons {
+        display: grid;
+        gap: 2vh;
+    }
+
+
+
+}
