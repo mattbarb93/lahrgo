@@ -24,7 +24,25 @@ const Sections = () => {
       </div>
 
       <Router>
-        <div className="ui two column centered grid">
+        <div className="ui five row centered grid">
+          <div className="row mobileOption">
+            <p>1</p>
+          </div>
+          <div className="row centered mobileOption">
+            <p>2</p>
+          </div>
+          <div className="row mobileOption">
+            <p>3</p>
+          </div>
+          <div className="row mobileOption">
+            <p>4</p>
+          </div>
+          <div className="row mobileOption">
+            <p>5</p>
+          </div>
+        </div>
+
+        {/* <div className="ui two column centered grid">
           <div className="three column row">
             <div onClick={navigateToEastAfrica} className="column">
               <img src="/images/East Africa Elephant Youth.jpg" />
@@ -52,7 +70,7 @@ const Sections = () => {
               <p>2004 Portraits</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </Router>
     </div>
   );

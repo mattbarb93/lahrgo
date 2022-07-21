@@ -40,7 +40,7 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     .image-grid {
         grid-template-columns: repeat(auto-fill, minmax(120px, 0.5fr));
         grid-gap: 7px 25px;

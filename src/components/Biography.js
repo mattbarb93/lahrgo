@@ -4,7 +4,9 @@ import "./Biography.css";
 const Biography = () => {
   return (
     <div className="biography-content">
-      <h1>About the Artist</h1>
+      <div className="biography-title">
+        <h1>About the Artist</h1>
+      </div>
       <div className="biography-section">
         <img src="../../images/Bronx Zoo rhinoceros.jpg" alt="rhino"></img>
         <h3>

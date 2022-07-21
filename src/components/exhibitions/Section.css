@@ -1,5 +1,9 @@
 .section-header {
-    margin-top: 5vh;
+    height: 10vh;
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -34,6 +38,20 @@
     font-size: 1.6rem;
     text-align: center;
     z-index: 1;
+}
+
+.mobileOption {
+    background-color: pink;
+    color: black;
+    height: 10vh;
+    border: 1px solid red;
+    z-index: 100;
+}
+
+.mobileOption p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

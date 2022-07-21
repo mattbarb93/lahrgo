@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Biography from "./components/Biography";
 import Contact from "./components/Contact";
 import Sections from "./components/exhibitions/Sections";
@@ -33,16 +33,6 @@ const App = () => {
     }
   }
 
-  function setHeight(height) {
-    if (height < 990) {
-      console.log("tablet mode");
-      return "100vh";
-    } else {
-      console.log("desktop");
-      return "80vh";
-    }
-  }
-
   const classes = cx("pusher", "bottom", { dimmed: toggle });
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 990);
@@ -64,7 +54,7 @@ const App = () => {
         <NavBar toggleMenu={toggle} onToggleMenu={toggleMenu} />
         <div
           className="ui container attached pushable"
-          style={{ height: `${isMobile ? "100vh" : "80vh"}` }}
+          style={{ height: "80vh" }}
         >
           <div className={classes} onClick={hideMenu}>
             <Route path="/" exact component={Home} />
