@@ -24,21 +24,29 @@ const Sections = () => {
       </div>
 
       <Router>
-        <div className="ui five row centered grid">
-          <div className="row mobileOption">
-            <p>1</p>
+        <div className="five row centered grid section-content">
+          <div onClick={navigateToEastAfrica} className="row mobileOption">
+            <img src="/images/East Africa Elephant Youth.jpg" />
+            <p>TBD: East Africa</p>
           </div>
-          <div className="row centered mobileOption">
-            <p>2</p>
+          <div onClick={navigateTo2017Artists} className="row mobileOption">
+            <img src="/images/Artists Alli Abbot vocalist.jpg" />
+            <p>2017 Artists</p>
           </div>
-          <div className="row mobileOption">
-            <p>3</p>
+          <div onClick={navigateTo2011BronxZoo} className="row mobileOption">
+            <img src="/images/Bronx Zoo Chuckwalla.jpg" />
+            <p>2011 Bronx Zoo</p>
           </div>
-          <div className="row mobileOption">
-            <p>4</p>
+          <div
+            onClick={navigateTo2007BusinessOwners}
+            className="row mobileOption"
+          >
+            <img src="/images/Hunt Bus Kura Barn, Hitoshi.JPG" />
+            <p>2007 Business Owners</p>
           </div>
-          <div className="row mobileOption">
-            <p>5</p>
+          <div onClick={navigateTo2004Portraits} className="row mobileOption">
+            <img src="/images/Lahrgo Portraits Caroline reading Cezanne.JPG" />
+            <p>2004 Portraits</p>
           </div>
         </div>
 
