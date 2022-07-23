@@ -23,33 +23,30 @@ const PaintingsSection = () => {
       </div>
 
       <Router>
-        <div className="ui two column centered grid">
-          <div className="three column row">
-            <div onClick={navigateToPortraits} className="column">
-              <img src="/images/Humans Caroline & Luna.jpg" />
-              <p>Portraits</p>
-            </div>
-
-            <div onClick={navigateToAnimals} className="column">
-              <img src="/images/Animals Luna with her arm up.jpg" />
-              <p>Animals</p>
-            </div>
-
-            <div onClick={navigateToLandscapes} className="column">
-              <img src="/images/Landscapes St Paul de Mausole.JPG" />
-              <p>Landscapes</p>
-            </div>
+        <div className="five row centered grid section-content">
+          <div onClick={navigateToPortraits} className="row mobileOption">
+            <img src="/images/Humans Caroline & Luna.jpg" />
+            <p>Portraits</p>
           </div>
-          <div className="three column row">
-            <div onClick={navigateToReaders} className="column">
-              <img src="/images/Readers at Heckscher museum.jpg" />
-              <p>Readers</p>
-            </div>
 
-            <div onClick={navigateToStillLifes} className="column">
-              <img src="/images/Still Life Sunflower Bouquet.jpg" />
-              <p>Still Lifes</p>
-            </div>
+          <div onClick={navigateToAnimals} className="row mobileOption">
+            <img src="/images/Animals Luna with her arm up.jpg" />
+            <p>Animals</p>
+          </div>
+
+          <div onClick={navigateToLandscapes} className="row mobileOption">
+            <img src="/images/Landscapes St Paul de Mausole.JPG" />
+            <p>Landscapes</p>
+          </div>
+
+          <div onClick={navigateToReaders} className="row mobileOption">
+            <img src="/images/Readers at Heckscher museum.jpg" />
+            <p>Readers</p>
+          </div>
+
+          <div onClick={navigateToStillLifes} className="row mobileOption">
+            <img src="/images/Still Life Sunflower Bouquet.jpg" />
+            <p>Still Lifes</p>
           </div>
         </div>
       </Router>

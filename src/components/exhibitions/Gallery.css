@@ -45,6 +45,8 @@
 .column h3 {
     color: white;
     text-align: center;
+    white-space: initial;
+    width: 90%;
 }
 
 .column h5 {

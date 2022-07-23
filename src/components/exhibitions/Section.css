@@ -1,6 +1,7 @@
 .section-header {
     height: 10vh;
     padding-top: 5vh;
+    padding-bottom: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
